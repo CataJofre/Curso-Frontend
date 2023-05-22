@@ -1,0 +1,99 @@
+/*Tarea 3, misma pagina de la tarea anteriores pero responsiva y con grid*/
+/*titulos*/
+@media (min-height: 680px), screen and (orientation: portrait) {
+  h1 {
+    display: flex;
+    justify-content: center;
+  }
+  /*configuracion de la lista del menu*/
+  ul {
+    /*quitar los iconos al lado de las listas*/
+    list-style-type: none;
+    background-color: rgb(53, 29, 73);
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+  }
+  /*caracteristicas del logo*/
+  .logo {
+    display: flex;
+    justify-content: left;
+    width: 50px;
+  }
+  /*configurar el menu para que quede bien posicionado*/
+  .menu {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-between;
+  }
+  /*configuracion de las listas dentro del menu*/
+  .menu li {
+    flex: 1;
+    text-align: center;
+    padding: 7px;
+  }
+  /*configuracion de los links a otras paginas*/
+  li a {
+    /*se le quita la rayita abajo al link*/
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 15px;
+    margin: 5px;
+  }
+  /*cambiar la forma en la que interactua el texto cuando se pone el mouse encima*/
+  li a:hover {
+    background-color: rgb(99, 41, 138);
+  
+  }
+  /*configuracion para el tamaño y posicion del carrusel*/
+  .carrusel {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+  }
+  /*configuracion layout*/
+  .grid-layout {
+    display: grid;
+    grid-template-columns: auto;
+    
+  }
+  /*configuracion del texto de bienvenida*/
+  .bienvenida {
+    grid-column: 1/3;
+    background-color: rgba(239, 184, 253, 0.701);
+    text-align: center;
+    padding: 5%;
+  }
+  /*Configuracion de los pilares*/
+  .gustos {
+    grid-column: 1/2;
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(62, 9, 77, 0.799);
+    color: rgb(250, 233, 254);
+  }
+  .estilos {
+    grid-column: 2/3;
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(62, 9, 77, 0.799);
+    color: rgb(250, 233, 254);
+  }
+  .quienes-somos {
+    grid-column: 3/3;
+    text-align: center;
+    padding: 2%;
+    background-color: rgba(62, 9, 77, 0.799);
+    color: rgb(250, 233, 254);
+  }
+  /* configuracion del footer*/
+  footer {
+    background-color: rgba(62, 9, 77, 0.799);
+    color: rgb(254, 233, 251);
+  }
+}
